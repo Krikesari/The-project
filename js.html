@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        function Add(){
+            x=parseInt(f1.tb1.value)
+            y=parseInt(f1.tb2.value)
+            z=x+y
+            document.getElementById("para").innerHTML=z
+        }
+        function Sub(){
+            x=parseInt(f1.tb1.value)
+            y=parseInt(f1.tb2.value)
+            z=x-y
+            document.getElementById("para").innerHTML=z
+        }
+        function Mul(){
+            x=parseInt(f1.tb1.value)
+            y=parseInt(f1.tb2.value)
+            z=x*y
+            document.getElementById("para").innerHTML=z
+        }
+        function Div(){
+            x=parseInt(f1.tb1.value)
+            y=parseInt(f1.tb2.value)
+            z=x/y
+            document.getElementById("para").innerHTML=z
+        }
+        function Mod(){
+            x=parseInt(f1.tb1.value)
+            y=parseInt(f1.tb2.value)
+            z=x%y
+            document.getElementById("para").innerHTML=z
+        }
+    </script>
+</head>
+
+<body>
+    <form id="f1">
+
+        <input type="number" id="tb1" placeholder="Input first value">
+        <hr>
+        <input type="number" id="tb2" placeholder="Input second value">
+        <hr>
+        <button type="button" onclick="Add()" style="color: teal;">Addition(+)</button>
+        <button type="button" onclick="Sub()" style="color: teal;">Subtraction(-)</button>
+        <button type="button" onclick="Mul()" style="color: teal;">Multiplication (×)</button>
+        <button type="button" onclick="Div()" style="color: teal;">Division(÷)</button>
+        <button type="button" onclick="Mod()" style="color: teal;">Modulus(%)</button>
+        <p>Result:</p>
+        <p id="para"></p>
+    </form>
+</body>
+
+</html>   
